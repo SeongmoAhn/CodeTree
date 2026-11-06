@@ -6,7 +6,7 @@ public class Main {
         int[] arr1 = new int[N], arr2 = new int[M];
         for (int i = 0; i < N; i++) arr1[i] = sc.nextInt();
         for (int i = 0; i < M; i++) arr2[i] = sc.nextInt();
-        for (int i = 0; i + M <= N; i++) {
+        for (int i = 0; i + M - 1 < N; i++) {
             if (arr1[i] == arr2[0]) {
                 boolean flag = false;
                 for (int j = 0; j < M; j++) {

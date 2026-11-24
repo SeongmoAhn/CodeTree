@@ -6,7 +6,6 @@ public class Main {
         int idx;
         while ((idx = A.indexOf(B)) != -1) {
             A = A.substring(0, idx) + A.substring(idx + B.length());
-            idx = A.indexOf(B);
         }
         System.out.print(A);
     }

@@ -13,12 +13,6 @@ public class Main {
         char[] arr2 = word2.toCharArray();
         Arrays.sort(arr1);
         Arrays.sort(arr2);
-        for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] != arr2[i]) {
-                System.out.print("No");
-                return ;
-            }
-        }
-        System.out.print("Yes");
+        System.out.print(Arrays.equals(arr1, arr2) ? "Yes" : "No");
     }
 }

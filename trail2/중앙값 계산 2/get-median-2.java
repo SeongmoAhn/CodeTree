@@ -13,7 +13,7 @@ public class Main {
                     A[j] = arr[j];
                 }
                 Arrays.sort(A);
-                System.out.printf("%d ", A[(i + 1) / 2]);
+                System.out.printf("%d ", A[i / 2]);
             }
         }
         Arrays.sort(arr);
